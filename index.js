@@ -16,6 +16,7 @@ funcs.sortData(datas.arrayNumbers)
 funcs.sortData(datas.arrayCars)
 console.log(datas)
 
+
 // lev1_2_node.js-import_export
 
 // Aufgabenstellung
@@ -86,6 +87,7 @@ console.log(funcs.upAll("foo bar baz asdf amk"))
 console.log(funcs.checkOut("Test", "t"))
 console.log(funcs.checkOut("Test", "q"))
 
+
 // lev1_3_node.js-import_export
 // Aufgabenstellung
 
@@ -94,7 +96,28 @@ console.log(funcs.checkOut("Test", "q"))
 // je nachdem, was für ein Zeichen übergeben wird,
 // soll die Funktion addieren, subtrahieren, dividieren oder multiplizieren
 // importiere diese Funktion in deiner index.js und teste sie.
-console.log(funcs.calculate(3, "+", 2))
+console.log(funcs.calculate(3, "*", 2))
 
 // Bonus: Überprüfe, ob die Eingabe richtig war,
 // falls nicht gib einen Fehler zurück
+
+
+// lev2_1_node.js-import_export_filter
+
+// Aufgabenstellung
+// Erstelle dir ein neues Projekt.
+// In diesem Projekt brauchst du drei Dateien.
+// Die eine soll deine Daten enthalten (siehe Kommentarbereich),
+// die nächste deine Funktionen und eine Hauptdatei.
+// In dieser Hauptdatei möchtest du alles zusammenführen!
+
+// Erstelle dir in deiner Funktionsdatei:
+// eine Funktion, die mit Hilfe von filter
+// ein Array mit Objekten anhand von population filtert.
+// Sie soll die Städte zurückgeben, die mehr als 100000 Einwohner haben. 
+// eine weitere Funktion, die die Städte zurückgibt,
+// die weniger als 100000 Einwohner haben
+// exportiere beide Funktionen
+
+console.log(funcs.higher(datas.data))
+console.log(funcs.smaller(datas.data))

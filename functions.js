@@ -102,6 +102,17 @@ const calculate = (num1, oper, num2) => {
     }
 }
 
+// Erstelle dir in deiner Funktionsdatei:
+// eine Funktion, die mit Hilfe von filter
+// ein Array mit Objekten anhand von population filtert.
+// Sie soll die Städte zurückgeben, die mehr als 100000 Einwohner haben. 
+// eine weitere Funktion, die die Städte zurückgibt,
+// die weniger als 100000 Einwohner haben
+// exportiere beide Funktionen
+
+const higher = (arr) => arr.filter(ele => ele.population > 100000 ? ele : null)
+const smaller = (arr) => arr.filter(ele => ele.population < 100000 ? ele : null)
+
 module.exports = {
     sortData,
     firstEle,
@@ -116,5 +127,7 @@ module.exports = {
     upFirst,
     upAll,
     checkOut,
-    calculate
+    calculate,
+    higher,
+    smaller
 }
