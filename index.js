@@ -49,16 +49,16 @@ console.log(funcs.nPosition(datas.arrayCars))
 // aus deinem Array entfernt
 // => Input: ([“remove”, “stay”, “stay5”, 22, true, “remove”], “remove”)
 // => Output: [“stay”, “stay5”, 22, true]
-console.log(funcs.removeEle(datas.someArray))
+console.log(funcs.removeEle(["remove", "stay", "stay5", 22, true, "remove"], "remove"))
 
 // gib ein Array zurück, dass nur aus einzigartigen Werten besteht.
 // Entferne die doppelten Elemente!
 // => Input: [1,6,9,2,1,6,7,10]
 // => Output: [1,6,9,2,7,10]
-console.log(funcs.removeDouble(datas.otherArray))
+console.log(funcs.removeDouble([1, 6, 9, 2, 1, 6, 7, 10]))
 
 // gib die Summe des Arrays zurück
-console.log(funcs.sumArray(datas.otherArray))
+console.log(funcs.sumArray([1, 6, 9, 2, 1, 6, 7, 10]))
 
 // Funktionen
 

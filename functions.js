@@ -45,8 +45,9 @@ const nPosition = (ele, n) => {
 // schreibe eine Funktion,
 // die ein bestimmtes Element komplett
 // aus deinem Array entfernt
-const removeEle = (ele) => ele
-// it doesn't work yet
+// const removeEle = (ele) => ele.filter((value) => value).slice(1, -1)
+const removeEle = (array, ele) =>
+    array.filter(item => item !== ele)
 
 // gib ein Array zurück, dass nur
 // aus einzigartigen Werten besteht.
