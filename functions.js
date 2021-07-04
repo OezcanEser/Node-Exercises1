@@ -45,7 +45,8 @@ const nPosition = (ele, n) => {
 // schreibe eine Funktion,
 // die ein bestimmtes Element komplett
 // aus deinem Array entfernt
-const removeEle = (array, ele) => array
+const removeEle = (ele) => ele
+// it doesn't work yet
 
 // gib ein Array zurück, dass nur
 // aus einzigartigen Werten besteht.
@@ -58,6 +59,28 @@ const removeDouble = (ele) =>
 const sumArray = ele => ele.reduce((a, b) => a + b
 )
 
+// die Funktion bekommt zwei Parameter übergeben.
+// Gib eine zufällige Zahl zurück, die zwischen diesen beiden liegt
+const randomNum = (min, max) => Math.round(Math.random() * (max - min) + min)
+
+// Erstelle eine Funktion, der ein String übergeben wird.
+// Sie soll den ersten Buchstaben in einen Großbuchstaben umwandelt
+const upFirst = (string) => string[0].toUpperCase() + string.slice(1)
+
+// Erstelle eine Funktion, der ein String übergeben wird.
+// Sie soll den gesamten String in Großbuchstaben umwandeln
+const upAll = (string) => string.toUpperCase()
+
+// Erstelle eine Funktion, mit zwei Parametern.
+// Sie soll überprüfen ob der letzte Buchstabe von Parameter 1
+// mit dem Parameter 2 überein stimmt
+// => Input: (‘Test’, ‘t’)
+// => Output: true 
+// => Input: (‘Test’, ‘q’)
+// => Output: false 
+const checkOut = (string, word) => string.slice(-1) === word
+
+
 module.exports = {
     sortData,
     firstEle,
@@ -67,5 +90,9 @@ module.exports = {
     nPosition,
     removeEle,
     removeDouble,
-    sumArray
+    sumArray,
+    randomNum,
+    upFirst,
+    upAll,
+    checkOut
 }

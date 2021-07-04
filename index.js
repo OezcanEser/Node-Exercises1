@@ -59,3 +59,29 @@ console.log(funcs.removeDouble(datas.otherArray))
 
 // gib die Summe des Arrays zurück
 console.log(funcs.sumArray(datas.otherArray))
+
+// Funktionen
+
+// hier Funktionen ohne Array, trotzdem mit Parametern
+// Jeder der folgenden Punkte ist eine EIGENE Funktion!
+// die Funktion bekommt zwei Parameter übergeben.
+// Gib eine zufällige Zahl zurück, die zwischen diesen beiden liegt
+console.log(funcs.randomNum(0, 10))
+
+// Erstelle eine Funktion, der ein String übergeben wird.
+// Sie soll den ersten Buchstaben in einen Großbuchstaben umwandelt
+console.log(funcs.upFirst("hello world"))
+
+// Erstelle eine Funktion, der ein String übergeben wird.
+// Sie soll den gesamten String in Großbuchstaben umwandeln
+console.log(funcs.upAll("foo bar baz asdf amk"))
+
+// Erstelle eine Funktion, mit zwei Parametern.
+// Sie soll überprüfen ob der letzte Buchstabe von Parameter 1
+// mit dem Parameter 2 überein stimmt
+// => Input: (‘Test’, ‘t’)
+// => Output: true 
+// => Input: (‘Test’, ‘q’)
+// => Output: false 
+console.log(funcs.checkOut("Test", "t"))
+console.log(funcs.checkOut("Test", "q"))
