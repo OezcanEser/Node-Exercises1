@@ -81,6 +81,26 @@ const upAll = (string) => string.toUpperCase()
 // => Output: false 
 const checkOut = (string, word) => string.slice(-1) === word
 
+// lev1_3_node.js-import_export
+// Erstelle eine Funktion, der 3 Parameter übergeben werden sollen.
+// Zwei Zahlen und ein Zeichen (+, -, /, *)
+// je nachdem, was für ein Zeichen übergeben wird,
+// soll die Funktion addieren, subtrahieren, dividieren oder multiplizieren
+// importiere diese Funktion in deiner index.js und teste sie.
+
+const calculate = (num1, oper, num2) => {
+    if (oper == "+") {
+        return num1 + num2;
+    } else if (oper == "-") {
+        return num1 - num2;
+    } else if (oper == "/") {
+        return num1 / num2;
+    } else if (oper == "*") {
+        return num1 * num2;
+    } else {
+        return "Invalid operator"
+    }
+}
 
 module.exports = {
     sortData,
@@ -95,5 +115,6 @@ module.exports = {
     randomNum,
     upFirst,
     upAll,
-    checkOut
+    checkOut,
+    calculate
 }

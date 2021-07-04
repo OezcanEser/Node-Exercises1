@@ -27,22 +27,22 @@ console.log(datas)
 // Jeder der folgenden Punkte ist eine EIGENE Funktion!
 
 // gib nur das ERSTE Element des Arrays zurück
-console.log(funcs.firstEle(datas.arrayCars))
+console.log(funcs.firstEle(['audi', 'bmw', 'ferrari', 'fiat', 'opel']))
 
 // gib alle AUSSER dem letzten Element des Arrays zurück
-console.log(funcs.notLast(datas.arrayCars))
+console.log(funcs.notLast(['audi', 'bmw', 'ferrari', 'fiat', 'opel']))
 
 // gib nur das LETZTE Element des Arrays zurück
-console.log(funcs.lastEle(datas.arrayCars))
+console.log(funcs.lastEle(['audi', 'bmw', 'ferrari', 'fiat', 'opel']))
 
 // gib ALLE AUSSER DEM ERSTEN Element des Arrays zurück
-console.log(funcs.notFirst(datas.arrayCars))
+console.log(funcs.notFirst(['audi', 'bmw', 'ferrari', 'fiat', 'opel']))
 
 // gib das Element zurück, das an Position n steht 
 // (du brauchst einen zweiten Parameter in deiner Funktion),
 // wenn n negativ oder größer als die Länge des Arrays ist
 // gib das letzte Element zurück
-console.log(funcs.nPosition(datas.arrayCars))
+console.log(funcs.nPosition(['audi', 'bmw', 'ferrari', 'fiat', 'opel'], 6))
 
 // schreibe eine Funktion,
 // die ein bestimmtes Element komplett
@@ -85,3 +85,16 @@ console.log(funcs.upAll("foo bar baz asdf amk"))
 // => Output: false 
 console.log(funcs.checkOut("Test", "t"))
 console.log(funcs.checkOut("Test", "q"))
+
+// lev1_3_node.js-import_export
+// Aufgabenstellung
+
+// Erstelle eine Funktion, der 3 Parameter übergeben werden sollen.
+// Zwei Zahlen und ein Zeichen (+, -, /, *)
+// je nachdem, was für ein Zeichen übergeben wird,
+// soll die Funktion addieren, subtrahieren, dividieren oder multiplizieren
+// importiere diese Funktion in deiner index.js und teste sie.
+console.log(funcs.calculate(3, "+", 2))
+
+// Bonus: Überprüfe, ob die Eingabe richtig war,
+// falls nicht gib einen Fehler zurück
